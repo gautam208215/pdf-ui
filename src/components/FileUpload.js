@@ -25,7 +25,7 @@ const FileUpload = () => {
     const formData = new FormData();
     formData.append("file", file);
 
-    fetch("http://localhost:8080/image/convert-jpg-to-pdf/v1", {
+    fetch("http://54.237.227.128:8080/image/convert-jpg-to-pdf/v1", {
       method: "POST",
       body: formData,
     })
